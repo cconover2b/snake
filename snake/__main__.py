@@ -15,7 +15,7 @@ from game.services.video_service import VideoService
 from game.shared.color import Color
 from game.shared.point import Point
 
-
+#test
 def main():
     
     # create the cast
