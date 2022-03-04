@@ -8,5 +8,5 @@ from game.scripting.action import Action
 # 2) loop through the actors
 # 3) call the move_next() method on each actor
 
-class MoveActorsAction(self, cast, script):
+class MoveActorsAction(Action):
     pass
