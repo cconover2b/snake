@@ -17,13 +17,14 @@ class Food(Actor):
         "Constructs a new Food."
         super().__init__()
         self._points = 0
-        self.set_text("@")
+        self.set_text(str(self._points))
         self.set_color(constants.RED)
         self.reset()
         
     def reset(self):
         """Selects a random position and points that the food is worth."""
-        self._points = random.randint(1, 8)
+        self._points = random.choice([-5,-10,5,10,20])
+        self.set_text(str(self._points))
         x = random.randint(1, constants.COLUMNS - 1)
         y = random.randint(1, constants.ROWS - 1)
         position = Point(x, y)
